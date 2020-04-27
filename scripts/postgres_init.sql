@@ -20,3 +20,7 @@ ALTER USER sheepdog_user WITH SUPERUSER;
 CREATE USER indexd_user;
 ALTER USER indexd_user WITH PASSWORD 'indexd_pass';
 ALTER USER indexd_user WITH SUPERUSER;
+
+CREATE USER arborist_user;
+ALTER USER arborist_user WITH PASSWORD 'arborist_pass';
+ALTER USER arborist_user WITH SUPERUSER;

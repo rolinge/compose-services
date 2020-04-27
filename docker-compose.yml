@@ -2,6 +2,8 @@ version: '3'
 services:
   postgres:
     image: postgres:9.6
+    environment:
+      - "POSTGRES_PASSWORD=genomicssavedme669889034678"
     networks:
       - devnet
     volumes:
