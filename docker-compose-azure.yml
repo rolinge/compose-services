@@ -60,7 +60,7 @@ services:
     depends_on:
       - postgres
   arborist-service:
-    image: "anvilregistry.azurecr.io/anvil/:2020.03"
+    image: "anvilregistry.azurecr.io/anvil/arborist:2020.03"
     container_name: arborist-service
     entrypoint: bash /go/src/github.com/uc-cdis/arborist/arborist_setup.sh
     networks:
