@@ -5,6 +5,7 @@
 * bash ./creds_setup.sh (setup secrets)
 * docker-compose up (start with logs)
 * docker-compose up -d (start without logs)
+* . ./guppy_setup.sh   # create the ES indices
 * docker-compose down (stop)
 * docker-compose down -v (stop and wipe existing data)
 
