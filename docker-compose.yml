@@ -39,7 +39,7 @@ services:
     depends_on:
       - postgres
   fence-service:
-    image: "quay.io/cdis/fence:2020.05"
+    image: "rmolinger/fence:test01"
     command: bash /var/www/fence/fence_setup.sh
     container_name: fence-service
     networks:
@@ -60,7 +60,8 @@ services:
     depends_on:
       - postgres
   arborist-service:
-    image: "quay.io/cdis/arborist:2020.05"
+    #image: "quay.io/cdis/arborist:2020.05"
+    image: "rmolinger/arborist:test01"
     container_name: arborist-service
     entrypoint: bash /go/src/github.com/uc-cdis/arborist/arborist_setup.sh
     networks:
