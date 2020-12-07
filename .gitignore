@@ -10,3 +10,7 @@ Secrets/
 *.pytest_cache
 *.cache
 *pyc
+*.tfstate
+*.tfstate.backup
+.terraform.tfstate.lock.info# Module directory
+.terraform/
